@@ -1,0 +1,4 @@
+target 'demoApp' do
+  use_frameworks!
+  pod 'SDWebImage', '~> 3.0'
+end
