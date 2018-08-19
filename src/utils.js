@@ -10,7 +10,7 @@ export { connect }
 
 export const createPromise = (action, payload) => (
 	new Promise((resolve, reject) => {
-		action({payload, resolve, reject});
+		action({...payload, resolve, reject});
 	})
 );
 

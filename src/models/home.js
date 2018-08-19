@@ -29,9 +29,9 @@ export default {
 	},
 	effects: {
 		* fetchData({payload}, {call, put}) {
-			const data = yield call(Api.send, Api.getActiveList, payload);
-			const rows = get(data, 'data');
-			if(payload.examinationId === 1) {
+			const data = yield call(Api.send, Api.getNeteaseVideo, payload);
+			const rows = get(data, '视频');
+			if(payload.offset === 0) {
 				yield put(replaceData({data: rows}));
 			} else {
 				yield put(mergeData({data: rows}));

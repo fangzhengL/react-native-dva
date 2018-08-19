@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import {get} from 'lodash';
 import {View} from 'react-native';
-import {defaultPage, WrappedFlatList} from "@/components";
+import {defaultPage, WrappedFlatList} from "../index";
 
 
 export default class FlatListState extends PureComponent {
@@ -55,7 +55,7 @@ export default class FlatListState extends PureComponent {
     if (length === 0) {
       return (
         <View style={[style, {width: this.width, height: this.height}, emptyStyle]}>
-          {defaultPage({status: 3, descText: `暂无${emptyTitle}`})}
+          {/* {defaultPage({status: 3, descText: `暂无${emptyTitle}`})} */}
         </View>
       )
     }

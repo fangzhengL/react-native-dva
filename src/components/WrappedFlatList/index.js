@@ -1,6 +1,6 @@
 import React,{createRef} from 'react';
 import { FlatList, StyleSheet, Animated, RefreshControl, Easing, Platform, View, Text, Dimensions } from 'react-native';
-import {pageBgColor} from "@/pages/constants/colors";
+// import {pageBgColor} from "@/pages/constants/colors";
 export default class WrappedFlatList extends React.Component {
   static defaultProps = {
     refreshing: false,
@@ -19,7 +19,7 @@ export default class WrappedFlatList extends React.Component {
     const {style}=this.props
     return (
       <FlatList
-        style={style?style:{backgroundColor:pageBgColor }}
+        // style={style?style:{backgroundColor:pageBgColor }}
         onLayout={this.props.onLayout}
         data={this.props.data || []}
         onScroll={this.props.onScroll}

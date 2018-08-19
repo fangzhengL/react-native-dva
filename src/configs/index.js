@@ -1,10 +1,10 @@
 
 const configs = {
 	dev: {
-		baseUrl: '',
+		baseUrl: 'https://c.m.163.com',
 	},
 	pro: {
-		baseUrl: '',
+		baseUrl: 'https://c.m.163.com',
 	},
 };
 

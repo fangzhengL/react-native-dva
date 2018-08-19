@@ -11,7 +11,6 @@ import { routerMiddleware } from './App'
 const app = dva({
     initialState: {},
     models: routerModel,
-    plugins: [createLoading()],
 	extraReducers: { router: routerReducer },
 	/*
 	 * onAction(fn | fn[])
